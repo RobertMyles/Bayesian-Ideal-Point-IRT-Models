@@ -88,7 +88,7 @@ D <- 2
 
 #delete missing values
 missing <- which(is.na(y))
-N <- N - length(miss)
+N <- N - length(missing)
 j <- j[-missing]
 k <- k[-missing]
 y <- y[-missing]
