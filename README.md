@@ -1,2 +1,3 @@
-# Bayesian_Ideal_Point_IRT_Models
+# Bayesian Ideal Point IRT Models
 Some IRT ideal point models that may be useful. 
+
