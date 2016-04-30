@@ -3,7 +3,7 @@ Some IRT ideal point models that may be useful for some folks. They are coded to
 
 ![](https://github.com/RobertMyles/Bayesian-Ideal-Point-IRT-Models/IRT image.pdf)
 
-(y_{ij} = \beta_j x_i - alpha_j  if the image doesn't render)
+(*y_{ij} = \beta_j x_i - alpha_j*  if the image doesn't render)
   
 (see [here](https://sourceforge.net/p/mcmc-jags/discussion/610037/thread/5c9e9026/ ))
 
