@@ -8,6 +8,6 @@
   
 (see [here](https://sourceforge.net/p/mcmc-jags/discussion/610037/thread/5c9e9026/ )).
 
-Among the models saved here are the basic IRT ideal point model, a multidimensional version, a dynamic version, and a multilevel version. Grouplet and testlet models are also included. THe basic IRT ideal point model is due to [Jackman](http://pan.oxfordjournals.org.sci-hub.cc/content/9/3/227.abstract).
+Among the models saved here are the basic IRT ideal point model, a multidimensional version, a dynamic version, and a multilevel version. Grouplet and testlet models are also included. The basic IRT ideal point model is due to [Jackman](http://pan.oxfordjournals.org.sci-hub.cc/content/9/3/227.abstract).
 
 
