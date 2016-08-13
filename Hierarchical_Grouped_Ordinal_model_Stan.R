@@ -26,23 +26,23 @@ senate_data <- list(N=nrow(VoteData), K=max(VoteData$SenIndex),
 
 ordinal_model <- "
 functions {
-vector gpcm_probs(real theta, real alpha, vector beta) {
-vector[rows(beta) + 1] unsummed;
-vector[rows(beta) + 1] probs;
-unsummed = append_row(rep_vector(0.0, 1), alpha*theta - beta);
-probs = softmax(cumulative_sum(unsummed));
-return probs;
+  vector gpcm_probs(real theta, real alpha, vector beta) {
+  vector[rows(beta) + 1] unsummed;
+  vector[rows(beta) + 1] probs;
+  unsummed = append_row(rep_vector(0.0, 1), alpha*theta - beta);
+  probs = softmax(cumulative_sum(unsummed));
+  return probs;
 }
 }
 data {
-int<lower=1> J;         //Legislators
-int<lower=1> K;         //Proposals
-int<lower=1> N;         //no. of observations
-int<lower=0> y[N];      // response for n; y = 0, 1 ... m_i
-int<lower=0> j[N];      //Legislator for observation n
-int<lower=0> k[N];      //Proposal for observation n
-int<lower=0> p;         // number of predictors
-int<lower=1> Party[N];  // Party for observation N
+  int<lower=1> J;         //Legislators
+  int<lower=1> K;         //Proposals
+  int<lower=1> N;         //no. of observations
+  int<lower=0> y[N];      // response for n; y = 0, 1 ... m_i
+  int<lower=0> j[N];      //Legislator for observation n
+  int<lower=0> k[N];      //Proposal for observation n
+  int<lower=0> p;         // number of predictors
+  int<lower=1> Party[N];  // Party for observation N
 }
 transformed data {
   int r[N];                      // modified response; r = 1, 2, ... m_i + 1
