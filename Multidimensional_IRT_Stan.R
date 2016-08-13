@@ -53,5 +53,5 @@ model {
   y[n] ~ bernoulli_logit(theta[j[n],1] * beta[k[n],1] + theta[j[n],2] * beta[k[n],2] - alpha[k[n]]);
 }"
 
-stan.fit <- stan(model_code=stan.code, data=senate_data, iter=7, warmup=3, chains=3, thin=1, init="random", verbose=TRUE, cores=3, seed=1234)
+stan.fit <- stan(model_code=stan.code, data=senate_data, iter=5000, warmup=2500, chains=4, thin=5, init="random", verbose=TRUE, cores=4, seed=1234)
 
