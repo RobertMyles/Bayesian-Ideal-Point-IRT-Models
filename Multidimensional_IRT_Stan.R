@@ -4,7 +4,7 @@ library(rstan)
 library(dplyr)
 library(readr)
 
-# This example shows a Two-Dimensional IRT Ideal Point model.
+# This example shows a Two-Dimensional IRT Ideal Point model. For higher dimensions, just change D below. This uses Beta to identify the model, but theta can likewise be used.
 
 
 VoteData  <-  read_csv("https://github.com/RobertMyles/R-Scripts-Bayesian-Ideal-Point-IRT/blob/master/Senate_Example.csv?raw=true")
@@ -20,7 +20,6 @@ senate_data <- list(N=nrow(VoteData), K=max(VoteData$SenIndex),
                   J=max(VoteData$SenIndex),
                   y=VoteData$Vote, k=VoteData$SenIndex, 
                   j=VoteData$SenIndex, D=2)
-
 
 
 

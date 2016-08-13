@@ -8,6 +8,6 @@
   
 (see [here](https://sourceforge.net/p/mcmc-jags/discussion/610037/thread/5c9e9026/ )).
 
-Among the models saved here are the basic IRT ideal point model, a multidimensional version, a dynamic version, and a multilevel version. Grouplet and testlet models are also included. The basic IRT ideal point model is due to [Jackman](http://pan.oxfordjournals.org.sci-hub.cc/content/9/3/227.abstract). There are various ways to prepare the data for Stan. For beginners, the method used in '2Dmodel.R' and 'Multidimensional_1D_IRT_Stan.R' is easy and intuitive: the data matrix can be inspected for the choice of constraints and so on. For those familiar with Stan, the data is prepared in a quicker way in the other files.
+Among the models saved here are the basic IRT ideal point model, a multidimensional version, a dynamic version, and a multilevel version. Grouplet and testlet models are also included. The basic IRT ideal point model is due to [Jackman](http://pan.oxfordjournals.org.sci-hub.cc/content/9/3/227.abstract). There are various ways to prepare the data for Stan. For beginners, the method used in '2Dmodel.R' is easy and intuitive: the data matrix can be inspected for the choice of constraints and so on. For those familiar with Stan, the data is prepared in a quicker way in the other files. ('2Dmodel.R' and 'MultidimensionaIRT_Stan.R' are basically identical, but the latter uses the tidier method of data preparation.)
 
 
