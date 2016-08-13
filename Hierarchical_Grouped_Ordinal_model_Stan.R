@@ -3,7 +3,7 @@ library(rstan)
 library(dplyr)
 library(readr)
 
-# This example shows an Ordinal One-Dimensional IRT Ideal Point model.
+# This example shows an Ordinal One-Dimensional IRT Ideal Point model. The ideal points are also hierarchical, being grouped by party.
 
 
 VoteData  <-  read_csv("https://github.com/RobertMyles/R-Scripts-Bayesian-Ideal-Point-IRT/blob/master/Senate_Example.csv?raw=true")
