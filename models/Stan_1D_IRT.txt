@@ -1,0 +1,23 @@
+data {
+  int<lower=1> K;                  // bills
+  int<lower=1> J;                  // voters
+  int<lower=1> N;                  // data items
+  int<lower=1, upper=K> k[N];     // bill for n
+  int<lower=1, upper=J> j[N];     // voter for n
+  int<lower=0, upper=1> y[N];      // votes
+}
+parameters {
+  vector[K] alpha;             
+  vector[K] beta;              
+  vector[J] theta;
+}
+model {
+  alpha ~ normal(0, 5);
+  beta ~ normal(0, 5);
+  theta[1] ~ normal(1, .01);
+  theta[2] ~ normal(-1, .01);
+  for n in 3:N{
+    theta[n] ~ normal(0, 1);
+  }
+  y ~ bernoulli_logit(beta[k]*theta[j] - alpha[k]);
+}
