@@ -1,8 +1,6 @@
 ## One dimensional IRT ideal point model, using Stan in R
 
 library(rstan)
-library(dplyr)
-
 
 load("data/votes.Rda")
 
