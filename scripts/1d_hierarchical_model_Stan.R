@@ -1,7 +1,6 @@
 ## One dimensional Hierarchical IRT ideal point model
 
 library(rstan)
-library(dplyr)
 
 
 load("data/votes.Rda")
