@@ -1,7 +1,6 @@
 ## Dynamic one dimensional IRT ideal point model
 
 library(rstan)
-library(dplyr)
 
 
 load("data/votes.Rda")
